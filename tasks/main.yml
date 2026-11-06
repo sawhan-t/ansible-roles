@@ -1,0 +1,12 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for copy
+- name: copy index.html to /var/www/html
+  copy:
+    src: "{{ src_file }}"
+    dest: "{{ dest_file }}"
+    owner: "{{ owner }}"
+    group: "{{ group }}"
+    mode: "{{ mode }}"
+  notify:
+      - restart nginx

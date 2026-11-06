@@ -1,0 +1,9 @@
+#SPDX-License-Identifier: MIT-0
+---
+# vars file for copy
+src_file: index.html
+dest_file: /var/www/html/index.html
+owner: www-data
+group: www-data
+mode: '0644'
+    
